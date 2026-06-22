@@ -10,7 +10,10 @@
             </a>
     
             <form action="{{ url_for('delete_book', id=boo[0]) }}" method="post" style="display:inline;">
-                <button type="submit" onclick="return confirm('Delete this book?')">
+                <button 
+                    type="submit" 
+                    #
+                    onclick = "return confirm('Delete the book {{boo[1]}} by {{boo[2]}} ?')">
                     Delete book!
                 </button>
             </form>
@@ -19,5 +22,5 @@
 </ul>
 
    <button onclick="window.location.href='{{ url_for('books') }}'">
-        Add Books
+        Add Books!
     </button>
