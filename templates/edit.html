@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Edit Book</title>
+    <title>Book Management System</title>
+    <link rel="stylesheet" 
+    href="{{ url_for('static', filename='style.css') }}">
+    <title>Change some info about the Book</title>
 </head>
 <body>
 
     <h1>Edit Book</h1>
     <form method="POST">
         
-        <label>Title:</label>
+        <label>Title :</label>
         <input type="text"
                name="title"
                value="{{ book[1] }}"
                required>
 
         
-        <label>Author:</label>
+        <label>Author :</label>
         <input type="text"
                name="author"
                value="{{ book[2] }}"

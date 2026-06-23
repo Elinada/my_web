@@ -1,11 +1,19 @@
-<h1>{{ holas }}</h1>
-<p>Add some book:</p>
+<head>
+    <title>Book Management System</title>
+    <link rel="stylesheet" 
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<h1> Add a new book now:</h1>
+{% if error %}
+    <p style="color: red;">{{ error }}</p>
+{% endif %}
 
 <form method="POST" action="/books">
-    <label for="title">Title:</label>
+    <label for="title">Title :</label>
     <input type="text" id="title" name="title" required>
     <br>
-    <label for="author">Author:</label>
+    <label for="author">Authors :</label>
     <input type="text" id="author" name="author" required>
     <br>
     <button type="submit" 
@@ -15,6 +23,7 @@
 
 
 
-<button onclick="window.location.href='{{ url_for('home') }}'">
+<button class="home-btn"
+onclick="window.location.href='{{ url_for('home') }}'">
     Go home
 </button>
