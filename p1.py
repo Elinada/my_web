@@ -58,6 +58,8 @@ def delete_book(id):
     return redirect(url_for('home'))
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    #app.run(debug=True)
+    #for ducker the next line is used
+    app.run(host="0.0.0.0", port=5000, debug=True)
     # for runing the app in production, use a WSGI server like Gunicorn or uWSGI instead of the built-in Flask server.  
     #app.run()

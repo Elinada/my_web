@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     max-width: 800px;
     margin: auto;
-    padding: 20px;
+    padding: 50px;
     background-color: #f5f5f5;
 }
 
@@ -44,6 +44,15 @@ button {
     display: block;
     margin: 0 auto;
 }
+
+.delete-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 1px 4px;
+    cursor: pointer;
+}
+
 
 button:hover {
     background-color: #005fa3;
