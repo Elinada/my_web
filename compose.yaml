@@ -1,0 +1,8 @@
+services:
+  app:
+    image: library-app
+    container_name: library-app-container
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./books.db:/app/books.db
