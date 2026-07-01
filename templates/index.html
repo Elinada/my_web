@@ -1,25 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Bienvenida Nareli</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %}Essays{% endblock %}
 
+{% block content %}
   <nav>
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/libros">Librrros</a></li>
-      <li><a href="/services">Services</a></li>
-      <li><a href="/contact">Contact</a></li>
+      <li><a href="/"> Bienvenida :) </a></li>
+      <li><a href="/espanol"> La no maestra de español </a></li>
+      <li><a href="/tools"> Herramientas mentales: occam razor broom engage </a></li>
+      <li><a href="/viajes"> Viajes con sus fotos ... luego </a></li>
     </ul>
   </nav>
-
-  <main>
-    <h1>Welcome to the Home Page</h1>
-    <p>This is the main content area.</p>
-  </main>
-
-</body>
-</html>
+  {% endblock %}

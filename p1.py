@@ -3,7 +3,7 @@ from database import (init_db,
                       insert_book, 
                       delete_books, 
                       editing_book,get_all_books, get_book_id)
-
+import os
 
 app = Flask(__name__) 
 
@@ -14,6 +14,17 @@ init_db()
 def home():
     return render_template("index.html")
 
+@app.route("/espanol")
+def espanol():
+    return render_template("espanol.html")
+
+@app.route("/mod1")
+def mod1():
+    return render_template("mod1.html")
+
+@app.route("/mod2")
+def mod2():
+    return render_template("mod2.html")
 
 @app.route("/libros")
 def libros():
@@ -66,6 +77,20 @@ def delete_book(id):
 if __name__ == "__main__":
     #app.run(debug=True)
     #for ducker the next line is used
-    app.run(host="0.0.0.0", port=5000, debug=False)
+    #app.run(host="0.0.0.0", port=5000, debug=True)
     # for runing the app in production, use a WSGI server like Gunicorn or uWSGI instead of the built-in Flask server.  
     #app.run()
+
+    # Modifications for running in Railway
+    #port = int(os.environ.get("PORT",5000))
+    #app.run(host="0.0.0.0", port=port, debug=False)
+
+    # Modifications for running in Railway
+    # NEXT LINES ALLOWS TO RUN THE APP IN PRODUCTION MODE WHEN DEPLOYED IN RAILWAY
+    # IN LAPTOP THE VALUE OF FLASK_ENV IS NOT SET, SO IT WILL RUN IN DEBUG MODE ALWAYS
+    # CHECK IT WITH echo $FLASK_ENV y va a salir vacio
+    debug_mode = os.environ.get("FLASK_ENV") != "production"
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=debug_mode)
+
+

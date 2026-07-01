@@ -1,0 +1,171 @@
+{% extends "base.html" %}
+{% block title %}Essays{% endblock %}
+
+{% block content %}
+    <div class="essays-container">
+        <h1>El Español por el mundo (módulo 1)</h1>
+        <h3> impartido por Dr. Emilio Sánchez Menéndez </h3>
+        <a class="back-link" href="{{ url_for('espanol') }}">&larr; Regresar DELE</a>
+<br>
+<button id="openPdfModal" class="pdf-button"> Materiales </button>
+<div id="pdfModal" class="modal-overlay">
+    <div class="modal-box">
+        <button id="closePdfModal" class="modal-close">&times;</button>
+        <h2> Documentos de referencia</h2>
+        <ul class="pdf-list">
+            <li><a href="{{ url_for('static', filename='pdfs/el_apogeo_del_castellano.pdf') }}" download
+            onclick ="return confirm('Download Document1?')"> El_apogeo_del_castellano.pdf</a></li>
+            <li><a href="{{ url_for('static', filename='pdfs/Historia mínima de la lengua española.pdf') }}" download>Historia mínima de la lengua española.pdf</a></li>
+            <li><a href="{{ url_for('static', filename='pdfs/La_andadura_del_español_x_el_mundo.pdf') }}" download>La_andadura_del_español_x_el_mundo.pdf</a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    const modal = document.getElementById('pdfModal');
+    document.getElementById('openPdfModal').addEventListener('click', () => {
+        modal.classList.add('active');
+    });
+    document.getElementById('closePdfModal').addEventListener('click', () => {
+        modal.classList.remove('active');
+    });
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.classList.remove('active');
+    });
+</script>
+
+        <div class="essay">
+            <h2>1. Resumen de Historia del Español en América</h2>
+            <div class="date">Mayo 2026</div>
+            <p>
+              De acuerdo a Luis Fernando Lara en su conferencia 
+               titulada “Historia del español en América. Imposición y apropiación” 
+               (https://www.youtube.com/watch?v=SB2aBJo31eA)
+               El primer fenómeno histórico que contribuye a la variedad del castellano en América, es la necesidad de los hablantes de reconocerse a sí mismos como seres que se han apropiado de la lengua, y no sólo como aquellos a quiénes históricamente les fue impuesta. 
+Tal apropiación implica la adaptación de la lengua en la vida cotidiana para cumplir sus necesidades comunicativas, que no puede ser reguladas, ni dictadas por las instituciones (como las normativas de España), sino que surge de una normatividad implícita, no legislable, que actúa entre quienes la practican.
+Los hablantes del castellano en América “no son pacientes sino actores”, y esa acción define la tradición verbal, separada en dos clases: la culta y la popular, pero ambas conformadas por particularidades regionales, definidas en un espacio variacional (dialectos de una lengua) y un espacio comunicativo (convivencia de lenguas en el espacio geográfico).
+María Luz Gutiérrez  considera que el español es esencialmente  una lengua de América, pues en este continente existe la mayor cantidad de hablantes. Históricamente, el mestizaje fue el inicio del aprendizaje del español en América. Los misioneros por su parte, aprendieron lenguas indígenas con la finalidad de lograr cierta unificación lingüística para tener poblaciones bilingües a las que pudieran evangelizar.
+Gutiérrez considera que el fenómeno más importante fue la incorporación de palabras indígenas al español, puesto que los conquistadores se encontraron con una gran cantidad de objetos, plantas, animales, frutas, que eran nuevos para ellos y para los que no tenían un nombre.
+En tiempos más recientes, las grandes migraciones de hispanohablantes hacia los Estados Unidos, ha logrado que ese país ocupe el segundo lugar en cantidad de personas hablantes del Español como lengua materna. Todos estos fenómenos han permitido una relajación de la gramática y variedades del idioma.
+
+            </p>
+        </div>
+
+        <div class="essay">
+            <h2>2. Factores económicos, políticos y culturales que contribuyeron a la expansión de Castilla y el
+              castellano</h2>
+            <div class="date">Mayo 2026</div>
+            <p>
+              La expansión de Castilla y el Castellano, se debió a factores políticos como el colapso musulmán en la península; la unión de Castilla y León, cuyo reino institucionalizó al castellano como la lengua oficial, a través de los documentos de la cancillería que permitieron la comunicación entre las regiones, puesto que el latín clásico no se entendía completamente.
+              El asentamiento de la nobleza y  de los llamados Reyes Católicos, buscaba la unión política para extender su territorio e influencia. También surgieron hermandades y órdenes militares que los protegían.
+              
+              Entre los factores económicos, están la intensificación de la ganadería, el trabajo artesanal, el comercio de lana, las joyas y vestidos como lujos, surgimiento de las ferias, y la capacidad recaudatoria de la corona, así como un comercio exterior marítimo.
+              
+              En el aspecto cultural, el castellano fue la base para la fundación de universidades. La poesía, los relatos de aventuras caballerescas, textos de astronomía, ciencia y derecho, se escribieron en lengua castellana, y su consolidación se vio favorecida por la difusión de la imprenta.
+              Así, el dominio del castellano unificó a la península en términos políticos, le permitió el florecimiento de la economía y la consolidación de  una identidad cultural.
+                  
+            </p>
+        
+        </div>
+
+        <div class="essay">
+          <h2>3 La importancia que adquirió Castilla y el Castellano </h2>
+          <div class="date">Mayo 2026</div>
+          <p>
+            Político
+            
+            Se debió principalmente a factores políticos como la expulsión de los musulmanes, que conllevo a fortalecer el territorio e influencia del reino de Castilla.
+            Los textos oficiales se tradujeron al castellano para permitir una comunicación entre las regiones de la península. 
+            El asentamiento de la nobleza buscaba unidad territorial estableció al castellano como la lengua del reino. 
+            
+             cuyos ideales eran la unidad política de la península. 
+            
+            Economia
+            
+            Los factores económicos encontramos con la intensificación de la ganadería, artesanías, la aparición del lujo, las ferias,  el comercio exterior intenso.
+          
+            Cultural 
+            El saber sale de las iglesias y se crean las universidades en donde el saber se traduce al castellano y se difunde en las universidades, 
+            poesía astronomía ciencia y derecho, aventuras caballerescas e importancia militar.
+            La imprenta
+            Identidad cultural
+            Por ello se convirtió en la lengua dominante
+            El latin classico se entendia mal y con dificultad
+            
+          </p>
+      </div>
+    
+        <div class="essay">
+          <h2>4. Rasgos que conserva el español moderno</h2>
+          <div class="date">Mayo 2026</div>
+          <p>
+            El español moderno si conserva algunos de los rasgos del español que estudia Alatorre, aunque desde luego, muchos otros se han perdido o modificado de manera importante a lo largo de los años de evolución.
+            Entre los rasgos que aún se conservan, encontramos el uso frecuente de refranes, no solo en la la literatura, sino también en la vida diaria, como un reflejo práctico de la sabiduría y cultura de los hablantes. Creo que incluso algunos refranes se enuncian en un tipo de español que suena antiguo.
+            Otro rasgo que permanece es que el español es una lengua que se habla en regiones muy distantes por millones de personas de culturas muy diversas, tal como el español de los siglos estudiados.
+            Considero que el uso de topónimos no ha cambiado mucho, dado que es muy común encontrar en América el uso de nombres que combinan el nombre original del lugar en la lengua local con algún nombre en español que casi siempre se es algún santo o referencia cristiana. Incluso en Estados Unidos encontramos ejemplos de topónimos en español.
+            
+            Desde luego que el español moderno ha perdido muchos de sus rasgos a través de su evolución. Por ejemplo, gran parte del vocabulario de la literatura culta de aquella época ya no se usa. La pronunciación también ha cambiado, de tal manera que algunos sonidos han desaparecido. 
+            Además el español moderno ha incorporado muchas palabras del inglés, de manera formal (institucionalizada) y en mayor proporción de manera informal, especialmente en vocabulario tecnológico.
+            
+          </p>
+      </div>
+
+        <div class="essay">
+            <h2>5  Proceso de asimilación cultural de los pueblos germanos en Hispania</h2>
+            <div class="date">Mayo 2026</div>
+            <p>
+              Cuando los pueblos germánicos llegaron a Hispania, conservaban algo de su lengua y costumbres, sin embargo abrazaron la cultura romana cristiana y se consideraban parte del imperio, de tal manera que para el siglo IV y V ya se habían latinizado, y para el VII ya habían perdido su lengua.
+              Los hispanorromanos, herederos de la latinidad antigua, se consideraban más civilizados que sus nuevos dominadores.
+              Todo el horizonte cultural ya había sido ocupado por el cristianismo, por lo que la conversión de los visigodos al cristianismo, primero a través del arrianismo, luego al cristianismo oficial, les permitió integrarse a través del mestizaje, y adoptar nombres del latín vulgar.  Sin embargo, en los topónimos de los pueblos que habían fundado, queda el recuerdo de de su lenguaje original. 
+              Durante este periodo comenzaron a distinguirse diferencias entre dialectos románicos, debidas principalmente a sonorización de as consonantes sordas.
+              Otro aspecto muy importante que permitió su integración, fue la creación de obras como el código legal liber judicious, que unió el derecho visigótico con el hispanorromano.
+            </p>
+        </div>
+
+        <div class="essay">
+          <h2>6 Comparación de los libros Aula América 1 y Prisma Latinoamericano A1</h2>
+          <div class="date">Junio 2026</div>
+          <p>Considero que el libro Aula América es más comunicativo que el libro Prisma Latinoamericano A1. Prisma Latinoamericano da más énfasis a la gramática y reglas del idioma. Por ejemplo en la primera unidad de Aula Americana veo fotografías con descripciones que parecen establecer ideas completas de la comunicación en español, mientras que en Prisma, también en la primera unidad presenta una versión más analítica del idioma y orientado a la gramática. En la unidad 4 veo que prisma presenta conjugaciones y muchos ejercicios de completar frases y relacionar palabras, mientras que para Aula América hay más descripciones y ejercicios de práctica con compañeros. 
+            La elección del libro depende del tipo de estudiantes, de su edad y las facilidades o preferencias de aprendizaje. Creo que en términos generales, los estudiantes adultos prefieren el aprendizaje más comunicativo si lo comparamos contra niños, aunque no siempre es así. Ambos enfoques tienen ventajas y desventajas, por lo que hacer una combinación de ellos pareciera lo más conveniente. Considero que es importante dar al estudiante un énfasis comunicativo para mantener la motivación alta, y las reglas y explicaciones analíticas que les permitan comprender y practicar la gramática.
+          </p>
+      </div>
+
+      <div class="essay">
+        <h2> 6. Puntos en común entre el proceso de refinamiento de la nobleza y el proceso de refinamiento de la lengua</h2>
+        <div class="date">Junio 2026</div>
+        <p>
+          Proceso de refinamiento de la nobleza y la lengua
+
+          De acuerdo al diccionario de la lengua española, la palabra “refinar” está definida en términos del habla, por lo que “refinarse” ya implica necesariamente hablar con finesa. Con respecto a la nobleza refinarse es el perfeccionamiento, purificación y separación de lo grosero. A continuación se presentan algunos de los eventos y personajes más representativos de esos procesos de refinamiento.
+          Durante el tiempo que duró la conquista de los romanos en Hispania (iniciada en el año 218 A. C.), éstos impusieron su cultura, religión y lengua, para el año 476 con la caída del imperio romano en  Occidente, quizá la lengua que más se hablaba era el protoromance (Lara, 2013), que es un latín muy vulgarizado. Por otro lado, los visigodos dominaron gran parte de la región durante aproximadamente 3 siglos, posteriormente los musulmanes árabes durante casi 8 siglos (711 a 1492), pero ninguno de ellos impuso su cultura ni religión o lengua, aunque muchas palabras quedaron como huella lingüística. Los nobles eran guerreros, como por ejemplo Don Pelayo que vivió en el siglo VIII y lideró la resistencia contra la expansión musulmana (Lara, 2013).
+          
+          El refinamiento de la nobleza evolucionó de la mano del refinamiento de la lengua, pues en el contexto de la península ibérica, la nobleza se estableció y fortaleció al tiempo que la lengua castellana se expandía desde los reinos del norte de España hacia el sur (Cano, 2004; Lapesa, 1981).
+          A finales del siglo XII e inicios del XIII en los reinos del norte de la España actual, no existía un idioma único, se hablaba según la región: leonés, navarro-aragonés, galaico-portugués y castellano primitivo, salpicado de arabismos y palabras tomadas de los visigodos (principalmente las referentes a la guerra). Los nobles de la época eran generalmente vasallos guerreros que no tenían necesidad de leer y escribir, pues su función era la guerra. Sin embargo esta situación tuvo un cambio muy importante durante el siglo XIII con la llegada al trono de Castilla, León y Galicia en 1252 de Alfonso X, también conocido como Alfonso El sabio, lo que marcó el inicio de una etapa muy importante para el refinamiento de la lengua y la nobleza, que parecen inseparables en este punto (Lapesa, 1981; Cano, 2004). Alfonso X era una persona interesada en el conocimiento, por lo que consideró que los nobles de su reino, además de ser guerreros, deberían tener “entendimiento”. Este parece el impulso principal del refinamiento de la nobleza, pues para alcanzar tal entendimiento, no sólo debían adiestrarse para la guerra, sino que también debían aprender a leer, escribir y comunicarse correctamente en la lengua del reino.
+          Con Alfonso X iniciaron los trabajos de codificación de los empleos lingüísticos del dialecto castellano que promovieron su uso en obras historiográficas y textos jurídicos. También se tradujeron obras filosóficas y científicas provenientes de las culturas griega y árabe. Las leyes se escribieron en castellano y éste se convirtió en  la lengua oficial de la cancillería. A la par de la extensión del castellano, se desarrollaron otras lenguas romances en la región como el gallego-portugués, aunque que se usaban con fines amorosos principalmente (Lara, 2013;Penny, 2006).
+          Uno de los eventos que más impulsó a este proceso de consolidación de la lengua castellana fue la llegada de la imprenta en el siglo XV, que permitió la impresión y distribución de obras literarias pequeñas llamadas romances. Un romance es un tipo de poemas cuya métrica es octosílaba, que les permite ser fácilmente recordados y los populariza rápidamente.  Los romances trataban temas históricos, amor cortés y de gesta. Quizá el ejemplo más famoso de un cantar de gesta es El Cantar de mio Cid que cuenta las aventuras del personaje histórico que vivió durante la Reconquista ayudando a la expulsión de los moros.
+          A mediados del siglo XV y XVI durante la época llamada la Reconquista, los Reyes Católicos Isabel de Castilla y Fernando de Aragón, continuaron la guerra para conquistar y cristianizar todo España hasta llegar al sur. El último territorio en caer  fue Granada en 1492 cuando Muhammad XII su último sultán se rindió (Lapesa, 1981). Con estos eventos se considera que se alcanzó la unificación del territorio, en términos políticos, de religión y lengua. Esto provocó que el uso de las otras lenguas romances se debilitara aún más y se limitara a dominios muy específicos. 
+          Otro evento de igual importancia ocurrió en el año 1492 con la aparición de la gramática del castellano escrita por Antonio de  Nebrija (López 2010) quién la entregaría a la Reina Isabel con el objetivo de enseñar castellano a los pueblos de los territorios conquistados. Ésta se considera la primera gramática del castellano y un intento ordenado por estudiarla. De hecho Nebrija tenía ideas concretas sobre la modernización de la  enseñanza, aunque realmente su gramática no se utilizó nunca para ello. En cambio hubo otras gramáticas que sí se utilizaron pero eran más bien de referencias para enseñar a hacer poemas.
+          La unidad territorial en la península ibérica implicó la unidad lingüística (aunque convivía con otras lenguas)  y un asentamiento de la nobleza que se cultivaba en el castellano mientras iba a la guerra.
+          La lengua se vio fortalecida con la llegada de grandes obras literarias, como la celestina en 1492 (Lapesa, 1981; Cano, 2004). El encuentro con América en ese mismo año, permitiría la expansión del español a los nuevos territorios, pero tendría lugar varios años más.
+          A inicios del siglo XVI podemos identificar a otro personaje muy importante que es Garcilaso de la Vega (Cano, 2004), que era soldado y poeta, una combinación que representa muy bien el tipo de nobleza de la que Alfonso X anhelaba. Garcilaso de la Vega participaba en las guerras, de hecho murió defendiendo territorio en Italia en donde, como muchos otros nobles, tuvo contacto con poetas italianos de quienes aprendió nuevas maneras de escribir poemas: los sonetos, con métricas que permiten la creación de obras literarias más elaboradas y profundas. Los temas que se trataban en los sonetos estaban más orientados hacia la belleza del cuerpo y del amor. A la muerte de Garcilaso en 1536 sus sonetos escritos en español fueron rescatados e impresos y distribuidos. Este ejemplo de Garcilaso es muy representativo de como la lengua se refina y con ello, los nobles que lo leían y escribían (Cano, 2004).
+          Durante el siglo XV y más intensamente a partir de la segunda mitad del siglo XVI ya se habla de la etapa de humanismo renacentista en España en donde inicia el interés por  los valores grecorromanos como la belleza del cuerpo, el deseo amoroso y el disfrute de la vida y la naturaleza, aunque restringidos por el cristianismo de la época. Un ejemplo de un noble culto y muy refinado durante el siglo XVI es el rey Carlos V quién era guerrero, políglota, bailarín y estadista. 
+          Así en el siglo XVII, siguiendo con ejemplos de refinamiento de la lengua y la nobleza, tenemos a Félix Lope de Vega que en 1615 ya había escrito centenares de piezas teatrales, Miguel de Cervantes publicaba la segunda parte del Quijote y circulaban las Soledades de Góngora, como las grandes obras representantes del tipo de literatura de la época, cuyos temas principales son el humor y fantasía.
+          Durante el siglo de las luces XVIII las artes en general, se vieron influenciadas por las ideas de la ilustración que colocan a la razón y la ciencia sobre la imaginación, la fantasía, por lo que la literatura se vio muy disminuida. Circularon los refranes por ejemplo, cuyo objetivo es más bien aleccionador. Un evento importante en este siglo es la aparición de la Real Academia de la Lengua para homologar y regular la escritura del español (Lara, 2013). 
+          En los siglos XVIII y XIX la nobleza era dueña de grandes territorios, con poder político y  prestigio y el castellano ya se había afianzado y extendido hasta América. Quizá estas son una nobleza y una lengua refinadas a través de los siglos, bien definidas y separadas “de lo otro”.
+          <br>
+          Referencias:<br>
+          (Lara, 2013) Lara, Luis Fernando. Historia mínima de la lengua española. México: El Colegio de México y El Colegio Nacional, 2013.<br>
+          (López 2010) López Morales, Humberto. La andadura del español por el mundo. Madrid: Taurus, 2010.<br>
+          (Cano, 2004) Cano Aguilar, Rafael (coord.). Historia de la lengua española. Barcelona: Ariel, 2004.<br>
+          (Penny, 2006) Penny, Ralph. Gramática histórica del español. 2.ª ed. actualizada. Barcelona: Ariel, 2006.<br>
+          Notas tomadas del curso Módulo I: El español en el mundo, Dr. Emilio Sánchez Menéndez, Diplomado en Didáctica del Español como lengua extranjera, Universidad Veracruzana, 2026 
+        </p>
+      NCC
+    </div>
+
+
+    </div>
+    <a class="back-link" href="{{ url_for('espanol') }}">&larr; Regresar a DELE</a>
+
+
+{% endblock %}

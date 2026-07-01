@@ -1,6 +1,6 @@
 services:
   app:
-    image: library-app
+    build: .
     container_name: library-app-container
     ports:
       - "5000:5000"
