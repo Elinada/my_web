@@ -18,6 +18,21 @@ def home():
 def espanol():
     return render_template("espanol.html")
 
+
+@app.route("/frida")
+def frida():
+    return render_template("frida.html")
+
+
+@app.route("/computacion")
+def computacion():
+    return render_template("computacion.html")
+
+
+@app.route("/tools")
+def tools():
+    return render_template("tools.html")
+
 @app.route("/mod1")
 def mod1():
     return render_template("mod1.html")
