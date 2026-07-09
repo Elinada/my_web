@@ -18,10 +18,9 @@ def home():
 def espanol():
     return render_template("espanol.html")
 
-
-@app.route("/frida")
-def frida():
-    return render_template("frida.html")
+@app.route("/frases")
+def frases():
+    return render_template("frases.html")
 
 
 @app.route("/computacion")
