@@ -32,6 +32,10 @@ def computacion():
 def tools():
     return render_template("tools.html")
 
+@app.route("/iremi")
+def iremi():
+    return render_template("iremi.html")
+
 @app.route("/mod1")
 def mod1():
     return render_template("mod1.html")
