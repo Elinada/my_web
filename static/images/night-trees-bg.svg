@@ -1,0 +1,59 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#05060f"/>
+      <stop offset="45%" stop-color="#0d1230"/>
+      <stop offset="75%" stop-color="#241a3d"/>
+      <stop offset="100%" stop-color="#3a1f45"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fdf6e3" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#fdf6e3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="900" fill="url(#sky)"/>
+
+  <circle cx="1280" cy="160" r="140" fill="url(#moonGlow)"/>
+  <circle cx="1280" cy="160" r="60" fill="#fdf6e3"/>
+
+  <g fill="#f5efe0">
+    <circle cx="120" cy="90" r="1.6"/>
+    <circle cx="220" cy="150" r="1.2"/>
+    <circle cx="340" cy="60" r="1.8"/>
+    <circle cx="470" cy="120" r="1.3"/>
+    <circle cx="560" cy="200" r="1.5"/>
+    <circle cx="680" cy="80" r="1.2"/>
+    <circle cx="780" cy="150" r="1.8"/>
+    <circle cx="900" cy="70" r="1.3"/>
+    <circle cx="1000" cy="180" r="1.5"/>
+    <circle cx="1100" cy="100" r="1.2"/>
+    <circle cx="60" cy="220" r="1.4"/>
+    <circle cx="1450" cy="90" r="1.6"/>
+    <circle cx="1550" cy="200" r="1.2"/>
+    <circle cx="1380" cy="280" r="1.4"/>
+    <circle cx="200" cy="300" r="1.1"/>
+    <circle cx="820" cy="260" r="1.2"/>
+  </g>
+
+  <g fill="#0a0812" opacity="0.55">
+    <path d="M60 900 L80 620 L70 500 L90 500 L80 620 L100 460 L88 620 L100 900 Z"/>
+    <path d="M160 900 L185 560 L172 430 L198 430 L185 560 L205 400 L192 560 L205 900 Z"/>
+    <path d="M280 900 L300 640 L288 520 L312 520 L300 640 L322 480 L308 640 L322 900 Z"/>
+    <path d="M400 900 L425 540 L410 410 L440 410 L425 540 L450 380 L436 540 L450 900 Z"/>
+    <path d="M1150 900 L1175 560 L1160 430 L1190 430 L1175 560 L1200 400 L1186 560 L1200 900 Z"/>
+    <path d="M1280 900 L1300 620 L1288 500 L1310 500 L1300 620 L1322 460 L1308 620 L1322 900 Z"/>
+    <path d="M1450 900 L1475 540 L1460 410 L1490 410 L1475 540 L1500 380 L1486 540 L1500 900 Z"/>
+  </g>
+
+  <g fill="#050208">
+    <path d="M0 900 L0 700 L40 420 L60 300 L80 420 L100 260 L120 420 L145 340 L165 420 L190 700 L220 900 Z"/>
+    <path d="M200 900 L210 680 L240 460 L265 340 L285 460 L305 240 L325 460 L350 380 L370 460 L400 700 L430 900 Z"/>
+    <path d="M420 900 L440 720 L470 480 L495 360 L515 480 L535 260 L555 480 L580 400 L600 480 L630 700 L660 900 Z"/>
+    <path d="M650 900 L670 780 L700 600 L720 520 L740 600 L755 460 L775 600 L795 540 L810 600 L840 800 L870 900 Z"/>
+    <path d="M900 900 L920 800 L945 620 L965 540 L985 620 L1000 480 L1020 620 L1040 560 L1060 620 L1085 800 L1110 900 Z"/>
+    <path d="M1100 900 L1115 700 L1145 460 L1170 340 L1190 460 L1210 240 L1230 460 L1255 380 L1275 460 L1305 700 L1335 900 Z"/>
+    <path d="M1320 900 L1335 680 L1365 440 L1390 320 L1410 440 L1430 220 L1450 440 L1475 360 L1495 440 L1525 700 L1555 900 Z"/>
+    <path d="M1540 900 L1555 720 L1580 500 L1600 400 L1600 900 Z"/>
+  </g>
+</svg>

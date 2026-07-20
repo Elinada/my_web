@@ -1,8 +1,10 @@
+
 <head>
     <title>Book Management System</title>
     <link rel="stylesheet" 
     href="{{ url_for('static', filename='style.css') }}">
 </head>
+<a class="back-link" href="{{ url_for('home') }}">&larr; Ir al inicio</a>
 
 <h1> Add a new book now:</h1>
 {% if error %}
@@ -27,3 +29,4 @@
 onclick="window.location.href='{{ url_for('home') }}'">
     Go home
 </button>
+
