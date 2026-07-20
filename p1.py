@@ -18,19 +18,18 @@ def home():
 def espanol():
     return render_template("espanol.html")
 
+@app.route("/herramientas")
+def herramientas():
+    return render_template("herramientas.html")
+
+@app.route("/cs")
+def cs():
+    return render_template("cs.html")
+
 @app.route("/frases")
 def frases():
     return render_template("frases.html")
 
-
-@app.route("/computacion")
-def computacion():
-    return render_template("computacion.html")
-
-
-@app.route("/tools")
-def tools():
-    return render_template("tools.html")
 
 @app.route("/iremi")
 def iremi():

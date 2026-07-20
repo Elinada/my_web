@@ -129,20 +129,30 @@ button:hover {
     align-items: center;
 }
 
+.main-nav {
+    background: linear-gradient(90deg, #0a0a0a, #6a0dad, #ff1493, #0a0a0a);
+    padding: 0.8rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    align-items: center;
+    border-radius: 8px;
+}
+
 .main-nav a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
-    padding: 0.3rem 0.5rem;
-    border-radius: 4px;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.12);
     transition: background 0.2s;
 }
 
 .main-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.25);
 }
-
 .essay img {
     max-width: 100%;
     height: auto;
