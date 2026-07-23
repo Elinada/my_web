@@ -2,15 +2,34 @@
 {% block title %}CS{% endblock %}
 
 {% block content %}
+<br>
+<button id="openPdfModal" class="pdf-button"> Notes </button>
+<div id="pdfModal" class="modal-overlay">
+    <div class="modal-box">
+        <button id="closePdfModal" class="modal-close">&times;</button>
+        <h3> Download</h3>
+        <ul class="pdf-list">
+            <li><a href="{{ url_for('static', filename='pdfs/memory.pdf') }}" download
+            onclick ="return confirm('Download Document1?')"> Memory.pdf</a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    const modal = document.getElementById('pdfModal');
+    document.getElementById('openPdfModal').addEventListener('click', () => {
+        modal.classList.add('active');
+    });
+    document.getElementById('closePdfModal').addEventListener('click', () => {
+        modal.classList.remove('active');
+    });
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.classList.remove('active');
+    });
+</script>
+<br>
 <a class="back-link" href="{{ url_for('home') }}">&larr; Go home</a>
 
-<div class="essays-container">
-    <h1> Some Computing topics </h1>
-    <br>
-    <div class="essay">
-     <h2>under construction</h2>
-        <div class="date">Julio 2026</div>
-    </div>
-</div>    
 {% endblock %}
-<a class="back-link" href="{{ url_for('home') }}">&larr; Go home</a>
+
+
