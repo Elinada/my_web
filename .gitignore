@@ -1,5 +1,19 @@
-__pycache__/
+# Virtual environment
 venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
 *.pyc
-instance/
+*.pyo
+
+# OS junk files
 .DS_Store
+
+# Environment variables (if you have any secrets/config)
+.env
+
+# Editor/IDE folders (optional, skip if not using these)
+.vscode/
+.idea/

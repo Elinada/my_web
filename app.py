@@ -1,3 +1,0 @@
-books = [
-    "Dunepo slr",
-]

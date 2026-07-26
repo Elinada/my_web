@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gramática</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+    <nav class="main-nav">
+        <a href="../index.html"> Bienvenida </a>
+        <a href="../espanol/index.html"> Cursando DELE</a>
+        <a href="../frases/index.html"> frases que vi por alli</a>
+        <a href="../iremi/index.html"> Los poemas de Iremi</a>
+        <a href="../herramientas/index.html"> Herramientas mentales </a>
+        <a href="../cs/index.html"> Computer Science </a>
+        <!-- add more links as you create more pages -->
+    </nav>
+
+    <main>
+        
+    <div class="essays-container">
+        <h2>Aspectos gramaticales (módulo 2)</h2>
+        <h3> impartido por Dra. Miriam Reyes </h3>
+        <a class="back-link" href="../espanol/index.html">&larr; Regresar DELE</a>
+<br> 
+
+<button id="openPdfModal" class="pdf-button"> Materiales </button>
+<div id="pdfModal" class="modal-overlay">
+    <div class="modal-box">
+        <button id="closePdfModal" class="modal-close">&times;</button>
+        <h2> Documentos de referencia</h2>
+        <ul class="pdf-list">
+            <li><a href="../static/pdfs/Mart%C3%AD_y_Ru%C3%ADz(2014).pdf" download>Martí_y_Ruíz(2014).pdf</a></li>
+            <li><a href="../static/pdfs/Cadiermo(2010).pdf" download>Cadiermo(2010).pdf</a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+  const modal = document.getElementById('pdfModal');
+  document.getElementById('openPdfModal').addEventListener('click', () => {
+      modal.classList.add('active');
+  });
+  document.getElementById('closePdfModal').addEventListener('click', () => {
+      modal.classList.remove('active');
+  });
+  modal.addEventListener('click', (e) => {
+      if (e.target === modal) modal.classList.remove('active');
+  });
+</script>
+
+<div class="essay">
+  <h2> 1. Enseñanza de la gramática en el aula de ELE
+  </h2>
+  <div class="date">Junio 2026</div>
+  <p>
+      Comparación entre dos enfoques
+      </p>
+  <img src="../static/images/cuadroC.jpg" alt="Cuadro comparativo">
+
+</div>
+
+        <div class="essay">
+            <h2>2. Clase de palabras demostrativos</h2>
+            <div class="date">Junio 2026</div>
+            <p>
+              infografia  
+            </p>
+        
+        </div>
+    </div>
+    <a class="back-link" href="../espanol/index.html">&larr; Regresar a DELE</a>
+
+
+
+    </main>
+
+</body>
+</html>

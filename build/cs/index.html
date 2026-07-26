@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+    <nav class="main-nav">
+        <a href="../index.html"> Bienvenida </a>
+        <a href="../espanol/index.html"> Cursando DELE</a>
+        <a href="../frases/index.html"> frases que vi por alli</a>
+        <a href="../iremi/index.html"> Los poemas de Iremi</a>
+        <a href="../herramientas/index.html"> Herramientas mentales </a>
+        <a href="index.html"> Computer Science </a>
+        <!-- add more links as you create more pages -->
+    </nav>
+
+    <main>
+        
+<br>
+<button id="openPdfModal" class="pdf-button"> Notes </button>
+<div id="pdfModal" class="modal-overlay">
+    <div class="modal-box">
+        <button id="closePdfModal" class="modal-close">&times;</button>
+        <h3> Download</h3>
+        <ul class="pdf-list">
+            <li><a href="../static/pdfs/memory.pdf" download
+            onclick ="return confirm('Download Document1?')"> Memory.pdf</a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    const modal = document.getElementById('pdfModal');
+    document.getElementById('openPdfModal').addEventListener('click', () => {
+        modal.classList.add('active');
+    });
+    document.getElementById('closePdfModal').addEventListener('click', () => {
+        modal.classList.remove('active');
+    });
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.classList.remove('active');
+    });
+</script>
+<br>
+<a class="back-link" href="../index.html">&larr; Go home</a>
+
+
+    </main>
+
+</body>
+</html>
