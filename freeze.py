@@ -2,7 +2,7 @@
 
 from flask_frozen import Freezer
 
-from Myhome import app
+from MyHome import app
 
 app.config['FREEZER_RELATIVE_URLS'] = True
 freezer = Freezer(app)
