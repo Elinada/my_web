@@ -1,4 +1,10 @@
-{% extends "base.html" %}
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+\begin{align*}{% extends "base.html" %}
 {% block title %}Herramientas{% endblock %}
 
 {% block content %}
@@ -21,6 +27,10 @@
     conviene más si fuera de otra manera, o que les da más poder. )
     <h3>La meditación</h3>
     <h3>Las matemáticas</h3>
+<h3>¿sabes cuántas certezas encontrarás?</h3>
+Creo que entre casi ninguna y ninguna. Riesgos calculados, imprevistos. Ninguno de esos sirven.
 </div>    
 {% endblock %}
 <a class="back-link" href="{{ url_for('home') }}">&larr; Ir al inicio</a>
+\end{align*}
+\end{document}

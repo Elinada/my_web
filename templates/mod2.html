@@ -3,7 +3,7 @@
 
 {% block content %}
     <div class="essays-container">
-        <h2>Aspectos gramaticales (módulo 2)</h2>
+        <h2>Aspectos gramaticales</h2>
         <h3> impartido por Dra. Miriam Reyes </h3>
         <a class="back-link" href="{{ url_for('espanol') }}">&larr; Regresar DELE</a>
 <br> 
@@ -40,7 +40,8 @@
   <p>
       Comparación entre dos enfoques
       </p>
-  <img src="{{ url_for('static', filename='images/cuadroC.jpg') }}" alt="Cuadro comparativo">
+  <img src="{{ url_for('static', filename='images/cuadroC.jpg') }}" 
+    alt="Cuadro comparativo" style="width: 40%; height: auto;">
 
 </div>
 
@@ -48,12 +49,23 @@
             <h2>2. Clase de palabras demostrativos</h2>
             <div class="date">Junio 2026</div>
             <p>
-              infografia  
-            </p>
+                <img src="{{ url_for('static', filename='images/demostrativos.png') }}" 
+                alt="demostrativos" style="width: 40%; height: auto;">            </p>
         
         </div>
     </div>
-    <a class="back-link" href="{{ url_for('espanol') }}">&larr; Regresar a DELE</a>
+
+
+    <div class="essay">
+        <h2>3. Plan para la clase de demostrativos niveles intermedios</h2>
+        <div class="date">Julio 2026</div>
+        <p>
+            <img src="{{ url_for('static', filename='pdfs/proyfinal.png') }}" 
+            alt="clasedemostrativos" style="width: 40%; height: auto;">            </p>
+    
+    </div>
+</div>
+<a class="back-link" href="{{ url_for('espanol') }}">&larr; Regresar a DELE</a>
 
 
 {% endblock %}
