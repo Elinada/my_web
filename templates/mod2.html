@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 {% block title %}gramática{% endblock %}
-
 {% block content %}
-    <div class="essays-container">
+
+
+<div class="essays-container">
         <h2>Aspectos gramaticales</h2>
         <h3> impartido por Dra. Miriam Reyes </h3>
         <a class="back-link" href="{{ url_for('espanol') }}">&larr; Regresar DELE</a>
@@ -59,12 +60,13 @@
     <div class="essay">
         <h2>3. Plan para la clase de demostrativos niveles intermedios</h2>
         <div class="date">Julio 2026</div>
-        <p>
-            <img src="{{ url_for('static', filename='pdfs/proyfinal.png') }}" 
-            alt="clasedemostrativos" style="width: 40%; height: auto;">            </p>
-    
+        <iframe src="{{ url_for('static', filename='pdfs/proyfinal.pdf') }}" 
+                class="pdf-viewer" 
+                title="Documento PDF">
+        </iframe>
     </div>
-</div>
+    
+
 <a class="back-link" href="{{ url_for('espanol') }}">&larr; Regresar a DELE</a>
 
 
