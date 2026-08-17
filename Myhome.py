@@ -40,6 +40,10 @@ def mod1():
 def mod2():
     return render_template("mod2.html")
 
+@app.route("/mod3/")
+def mod3():
+    return render_template("mod3.html")
+
 if __name__ == "__main__":
     #app.run(debug=True)
     #for ducker the next line is used

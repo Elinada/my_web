@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 }
@@ -12,10 +11,10 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     color: #f0eee6;
-}
-
-h1 {
-    color: #ffffff;
+    
+    h1 {
+        color: #ffffff;
+    }
 }
 
 a {
@@ -114,13 +113,16 @@ button:hover {
 }
 
 .modal-box {
-    background:none;  
-    top: 10px; right: 14px;
-    border:none;
-    font-size: 1.5rem;
-    position:absolute;
-    cursor: pointer;
-    color:#222;
+    background: #1e1e1e;
+    color: #f0eee6;
+    position: relative;
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 2rem 1.5rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.15);
 }
 
 .modal-close {
@@ -130,6 +132,7 @@ button:hover {
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
+    color: #f0eee6;
 }
 
 .pdf-list {
@@ -166,10 +169,36 @@ button:hover {
 .main-nav a:hover {
     background-color: rgba(255, 255, 255, 0.25);
 }
+
+/* ---------- Contenido de ensayos / páginas de contenido ---------- */
+.essays-container {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.essay {
+    padding-left: 15px;
+    margin-bottom: 2rem;
+}
+
 .essay img {
     max-width: 100%;
     height: auto;
     border-radius: 6px;
+    margin: 1rem 0;
+}
+
+/* ---------- Visor de PDF embebido ---------- */
+.pdf-viewer {
+    width: 100%;
+    max-width: 900px;
+    height: 700px;
+    border: 2px solid white;
+    border-radius: 6px;
+    display: block;
     margin: 1rem 0;
 }
 
@@ -205,6 +234,7 @@ li {
     margin-top: 0;
 }
 
+}
 
 .verticaldivider {
     border: 2px solid white;
@@ -221,4 +251,3 @@ li {
     .listmainpage {
         font-size: 22px;
     }
-}
