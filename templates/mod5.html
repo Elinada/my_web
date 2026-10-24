@@ -10,14 +10,13 @@
 
 </div>
 
-<div class="essay">
-  <h2>Ampliando identidades</h2>
-  <div class="date">24 de Octubre 2026</div>
-  <video class="video-viewer" controls preload="metadata">
-    <source src="{{ url_for('static', filename='videos/ampliando_identidades_1.mp4') }}" type="video/mp4">
-    Tu navegador no soporta la reproducción de video.
-  </video>
-</div>
+
+<video class="video-viewer" controls preload="metadata">
+  <source src="{{ url_for('static', filename='videos/ampliando_identidades_1.mp4') }}" type="video/mp4">
+  <track src="{{ url_for('static', filename='videos/letreros.vtt') }}"
+         kind="subtitles" srclang="es" label="Español" default>
+</video>
+
 
 <a class="back-link" href="{{ url_for('espanol') }}">&larr; Regresar a DELE</a>
 
